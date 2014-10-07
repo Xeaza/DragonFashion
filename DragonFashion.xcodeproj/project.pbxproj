@@ -14,6 +14,7 @@
 		3450E49319E43C2D005ED6E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3450E49219E43C2D005ED6E7 /* Images.xcassets */; };
 		3450E49619E43C2D005ED6E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3450E49419E43C2D005ED6E7 /* LaunchScreen.xib */; };
 		3450E4A219E43C2D005ED6E7 /* DragonFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450E4A119E43C2D005ED6E7 /* DragonFashionTests.m */; };
+		3450E4AD19E443E3005ED6E7 /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450E4AC19E443E3005ED6E7 /* Dragon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3450E49B19E43C2D005ED6E7 /* DragonFashionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonFashionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3450E4A019E43C2D005ED6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3450E4A119E43C2D005ED6E7 /* DragonFashionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonFashionTests.m; sourceTree = "<group>"; };
+		3450E4AB19E443E3005ED6E7 /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		3450E4AC19E443E3005ED6E7 /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				3450E48A19E43C2D005ED6E7 /* AppDelegate.m */,
 				3450E48C19E43C2D005ED6E7 /* ViewController.h */,
 				3450E48D19E43C2D005ED6E7 /* ViewController.m */,
+				3450E4AB19E443E3005ED6E7 /* Dragon.h */,
+				3450E4AC19E443E3005ED6E7 /* Dragon.m */,
 				3450E48F19E43C2D005ED6E7 /* Main.storyboard */,
 				3450E49219E43C2D005ED6E7 /* Images.xcassets */,
 				3450E49419E43C2D005ED6E7 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				3450E48E19E43C2D005ED6E7 /* ViewController.m in Sources */,
 				3450E48B19E43C2D005ED6E7 /* AppDelegate.m in Sources */,
+				3450E4AD19E443E3005ED6E7 /* Dragon.m in Sources */,
 				3450E48819E43C2D005ED6E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
