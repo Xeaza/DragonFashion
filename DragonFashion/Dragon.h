@@ -10,7 +10,9 @@
 
 @interface Dragon : NSObject
 
-@property NSMutableArray *dragons;
-@property NSString *name;
+@property (readonly) NSString *name;
+@property (nonatomic) NSString *favoriteClothingItem;
+
+- (instancetype)initWithName:(NSString *)name;
 
 @end

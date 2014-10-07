@@ -19,10 +19,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Dragon *dragon = [[Dragon alloc] init];
-    dragon.name = @"Smaug";
+    Dragon *smaug = [[Dragon alloc] initWithName:@"Smaug"];
+    smaug.favoriteClothingItem = @"Turtle neck and chain";
+    Dragon *glaedr = [[Dragon alloc] initWithName: @"Glaedr"];
+    glaedr.favoriteClothingItem = @"Scaled corsit";
+    Dragon *firnen = [[Dragon alloc] initWithName:@"Firnen"];
+    firnen.favoriteClothingItem = @"Headband";
+    Dragon *opheila = [[Dragon alloc] initWithName:@"Opheila"];
+    opheila.favoriteClothingItem = @"Birthday suit";
+    Dragon *miremel = [[Dragon alloc] initWithName:@"Miremel"];
+    miremel.favoriteClothingItem = @"Knee high socks made of noodles";
 
-    self.dragons = [NSMutableArray arrayWithObject:dragon];
+    self.dragons = [NSMutableArray arrayWithObjects:smaug, glaedr, firnen, opheila, miremel, nil];
+
+    // Calling alloc init on Dragon will crash the app and give the warning set in the Dragon class
+    // with NSException
+    //[[Dragon alloc] init];
+    for (Dragon *dragon in self.dragons) {
+        NSLog(@"%@", dragon.name);
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -35,6 +50,7 @@
 
     Dragon *dragon = [self.dragons objectAtIndex:indexPath.row];
     cell.textLabel.text = dragon.name;
+    cell.detailTextLabel.text = dragon.favoriteClothingItem;
     return cell;
 }
 
